@@ -1,8 +1,11 @@
+"use client";
+
 import { UserPlus } from "lucide-react";
 import Navigation from "@/components/navigation";
 import RadianceEffect from "@/components/radiance-effect";
 
 export default function HomePage() {
+
   return (
     <main>
       <Navigation />
@@ -61,7 +64,6 @@ export default function HomePage() {
         />
 
         <div className="relative z-10 mx-auto flex w-full max-w-4xl flex-col items-center px-6 py-16 text-center">
-
           {/* ─── Divine Mercy Image (circular) ─── */}
           <div
             className="relative mx-auto mb-8 w-56 sm:w-64 md:w-72"
@@ -92,14 +94,26 @@ export default function HomePage() {
 
           {/* ─── Motto ─── */}
           <div className="flex items-center gap-3 sm:gap-4">
-            <div className="h-px w-8 sm:w-10" style={{ background: "linear-gradient(90deg, transparent, rgba(201, 168, 76, 0.4))" }} />
+            <div
+              className="h-px w-8 sm:w-10"
+              style={{
+                background:
+                  "linear-gradient(90deg, transparent, rgba(201, 168, 76, 0.4))",
+              }}
+            />
             <p
               className="font-heading text-base italic tracking-wide sm:text-lg"
               style={{ color: "rgba(180, 140, 60, 0.85)" }}
             >
               Jesus, I Trust In You
             </p>
-            <div className="h-px w-8 sm:w-10" style={{ background: "linear-gradient(90deg, rgba(201, 168, 76, 0.4), transparent)" }} />
+            <div
+              className="h-px w-8 sm:w-10"
+              style={{
+                background:
+                  "linear-gradient(90deg, rgba(201, 168, 76, 0.4), transparent)",
+              }}
+            />
           </div>
 
           {/* ─── Description ─── */}
@@ -114,10 +128,9 @@ export default function HomePage() {
 
           {/* ─── CTA ─── */}
           <div className="mt-12 sm:mt-14">
-            {/* Enter Sanctuary — sacred gold pathway */}
             <a
-              href="#"
-              className="group relative inline-flex w-full items-center justify-center gap-3 overflow-hidden rounded-full px-6 py-4 text-base font-semibold tracking-wide text-navy-900 transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_0_50px_rgba(201,168,76,0.35)] sm:w-auto sm:px-10 sm:py-3.5 sm:text-sm"
+              href="/login"
+              className="group relative inline-flex w-full cursor-pointer items-center justify-center gap-3 overflow-hidden rounded-full px-6 py-4 text-base font-semibold tracking-wide text-navy-900 transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_0_50px_rgba(201,168,76,0.35)] sm:w-auto sm:px-10 sm:py-3.5 sm:text-sm"
               style={{
                 background: "linear-gradient(135deg, #E8C462, #C9A84C)",
                 boxShadow: "0 6px 32px rgba(201, 168, 76, 0.3)",
@@ -130,8 +143,7 @@ export default function HomePage() {
               <span
                 className="absolute inset-0 rounded-full opacity-0 transition-opacity duration-500 group-hover:opacity-100"
                 style={{
-                  background:
-                    "linear-gradient(135deg, #D4AF37, #E8C462)",
+                  background: "linear-gradient(135deg, #D4AF37, #E8C462)",
                 }}
               />
             </a>
